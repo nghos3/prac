@@ -1,0 +1,17 @@
+.navigation{
+	font-family: sans-serif;
+	text-decoration: none;
+	display: flex;
+}
+
+.img{
+	flex:1;
+}
+.nav{
+
+	flex: 1;
+}
+
+nav li{
+	display: inline;
+}

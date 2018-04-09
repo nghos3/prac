@@ -1,0 +1,31 @@
+
+start http server
+generate JSON
+-npm run lint
+-npm run generate
+-npm run start
+
+
+-readme
+>links for csvtojson
+>instruction
+>problem stm
+>eslint file
+>airbnb
+>src code
+{
+  "name": "CSVtoJSON",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^1.1.9",
+    "eslint": "^4.18.1"
+  }
+}

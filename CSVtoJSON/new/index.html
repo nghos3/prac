@@ -1,0 +1,44 @@
+<html>  
+    <head lang="en">  
+        <meta charset="UTF-8">  
+            <title>Line chart using D3.js and Dimple.js</title>  
+        </head>  
+        <body>  
+            <div id="abhichart"></div>  
+        </body>  
+        <script src="http://d3js.org/d3.v3.js"></script>  
+        <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>  
+<script >  
+var svg = dimple.newSvg("#abhichart", 1500, 500),  
+    chart = null,  
+    s1 = null,  
+    s2 = null,  
+    x = null,  
+    y1 = null,  
+    y2 = null,  
+    data = [{  
+        "Subjects": "Python",  
+        "Value 1": 10000,  
+        "Value 2": 100,  
+         
+    }, {  
+        "Subjects": "Java",  
+        "Value 1": 1000,  
+        "Value 2": 300000,  
+          
+    }, {  
+        "Subjects": "C",  
+        "Value 1": 120000,  
+        "Value 2": 140000,  
+        "Year 2": 2015  
+    }];  
+chart = new dimple.chart(svg, data);  
+x = chart.addCategoryAxis("x", "Subjects");  
+y1 = chart.addMeasureAxis("y", "Value 1");  
+y2 = chart.addMeasureAxis("y", "Value 2");  
+s1 = chart.addSeries("Year 1", dimple.plot.line, [x, y1]);  
+s2 = chart.addSeries("Year 2", dimple.plot.line, [x, y2]);  
+chart.addColorAxis("Value 1", ["green", "yellow", "red"]);  
+chart.draw();  
+</script>  
+ </html>  

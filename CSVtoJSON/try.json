@@ -1,0 +1,24 @@
+[
+{
+    "year" : "2014",
+    "fat": 17107.09000000002,
+    "protein": 8475.689000000008,
+    "carbohydrates": 31858.43999999998
+},
+{
+    "year" : "2015",
+    "fat": 377737.0363329951,
+    "protein": 220215.15770000097,
+    "carbohydrates": 789937.0098999911
+},
+{
+    "year" : "2016",
+    "fat": 33241.29930000003,
+    "protein": 15618.282000000012,
+    "carbohydrates": 69091.26999999999
+}]
+
+
+if(d.region=="North Europe")d.region=2000;
+    if(d.region== "Central Europe")region=2020;
+    if(d.region== "South Europe")region=2040 ;

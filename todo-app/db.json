@@ -1,0 +1,8 @@
+{
+	"tasks": [
+		{"id": 0, "tick": false, "item": "Remember the Milk"},
+		{"id": 1, "tick": false, "item": "Learn ReactJS"},
+		{"id": 2, "tick": true, "item": "Understand Thinking in React"},
+		{"id": 3, "tick": false, "item": "Learn JSON-Server"}
+	]
+}

@@ -1,0 +1,23 @@
+.Search {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.App {
+	text-align: center;
+	//background: black;
+	//color: white;
+	/*margin: auto;
+	width: 300px;*/
+}
+
+.table {
+	margin: auto;
+	padding-top: 30px;
+}
+
+.collapsed {
+	width: 70%;
+	margin: auto;
+}
+

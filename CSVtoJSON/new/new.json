@@ -1,0 +1,42 @@
+var result =[];
+var headers;
+var a=0;
+function csvJSON(csv,a){
+var lines = csv;
+   
+   if(a == 0)
+   headers=lines.split(",");
+  else
+   {
+
+	  var obj = {};
+	  var currentline=lines.split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/);
+      
+	  for(var j=0;j<headers.length;j++){
+		  // WRITE CONDITION
+       if(headers[j]== "salt_100g" || headers[j]== "sugars_100g" || headers[j] == "countries_en" || headers[j] == "carbohydrates_100g" ||headers[j] == "proteins_100g" ||headers[j] == "fat_100g")
+      obj[headers[j]] = currentline[j];
+      
+	  }
+
+	  result.push(obj);
+    
+    //JSON
+}
+  
+  //console.log(JSON.stringify(result));
+
+  }
+
+
+
+var fs = require('fs');
+var readline = require('readline');
+var stream = require('stream');
+var salt;
+var sugar;
+var instream = fs.createReadStream('FoodFacts.csv');
+var outstream = new stream;
+var ostream1 = fs.createWriteStream('bargraph.json');
+var ostream2 = fs.createWriteStream('multigraph.json');
+var rl = readline.createInterface(instream, outstream);
