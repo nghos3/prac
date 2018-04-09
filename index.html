@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Movie Cruizer</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+ 
+    
+</head>
+
+<body>
+    
+        <div class="row #263238 blue-grey darken-4"">
+              <div class="nav-wrapper #263238 blue-grey darken-4">
+           <div> 
+             <input class="col l9 box  white-text" type="text" placeholder="Enter your movie" id="val">
+            
+            </div>
+            <button class="col l1 btn " id="test" >GO!</button>
+             </div>
+             </div>
+
+               
+              <div class="container-fluid">
+                <div class="row m12 l12">
+                <div class="col m8 l8" id="att"></div>
+                <div class="col m3 l3" >
+                    <h3>COLLECTIONS</h>
+                 <div  class="container">
+                     <ul id="side" class="collapsible" data-collapsible="accordion">
+    
+                       </ul>
+       
+                 </div>
+                </div>
+                </div>
+        </div>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+                <div class="modal-content" id="modal-h">
+            
+              <a class='dropdown-button btn' href='#' data-activates='dropdown2' >Existing collections</a> <!-- existing collection -->
+             <button data-target="modal2" class="btn modal-trigger">Create new collection</button><!--new -->
+                            
+               </div>
+
+                <div class="modal-footer">
+
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">close</a>
+                </div>
+            </div>
+               <!-- modal2 -->
+             <div id="modal2" class="modal modal-fixed-footer">
+                <div class="modal-content" id="modal-h">
+                    <input class="col s5 box  black-text" type="text" placeholder="Enter your movie" id="addCollection">
+                </div>
+
+                <div class="modal-footer">
+                     <button class="col s1 btn modal-action modal-close" id="add" >CREATE</button>
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">close</a>
+
+
+
+                </div>
+            </div>
+     
+
+     <!-- Dropdown Structure2 -->
+     <ul id='dropdown2' class='dropdown-content'>
+
+       </ul>
+    
+    <!--...............................................................scripts.......................................-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <!--Import jQuery before materialize.js-->
+    <script src="dist/bundle.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+    $('.modal').modal({
+        dismissible: true, // Modal can be dismissed by clicking outside of the modal
+        opacity: .5, // Opacity of modal background
+        inDuration: 300, // Transition in duration
+        outDuration: 200, // Transition out duration
+        startingTop: '4%', // Starting top style attribute
+        endingTop: '10%', // Ending top style attribute
+        /*ready: function(modal, trigger) 
+        {
+         // Callback for Modal open. Modal and trigger parameters available.
+             },
+        complete: function() { } // Callback for Modal close*/
+    });
+
+    </script>
+
+</body>
+
+</html>
